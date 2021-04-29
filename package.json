@@ -11,7 +11,7 @@
     "lint-staged": "git diff --diff-filter=ACMRT --cached --name-only '*.js' '*.jsx' | xargs zeit-eslint",
     "build-views": "dottojs -s ./src -d ./src",
     "prepublish": "yarn run build-views",
-    "install": "yarn run build"
+    "prepare": "yarn run build-views"
   },
   "repository": "zeit/serve-handler",
   "keywords": [
